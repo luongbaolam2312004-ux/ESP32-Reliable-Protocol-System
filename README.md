@@ -37,6 +37,7 @@ Reliable transmission:
 - Error Detection: CRC16 for error detecting.
 - ACK/NACK: Comfirming and retransmitting mechanism.
 - Retransmission: Automatically retransmitting when system loses packets (3 times max).
+
 Performance Monitoring:
 - Throughput (kbps).
 - Latency (ms): Including average, min, max value.
@@ -44,11 +45,13 @@ Performance Monitoring:
 - Error Rate.
 - Success Rate.
 - Packet Loss.
+
 Auto-switch Protocol:
 - UART -> SPI: When Throughput increases, Latency and Error Rate decreases.
 - SPI -> UART: When Error Rate increases twice or Throughput decreases by 70%.
 - Dynamic Threshold: Configurable switching threshold.
 - Manual Override: Switching mode can be forced by button.
+
 Display Statistics:
 - LCD I2C 16x2: Displaying real-time metrics and mode.
 - Serial Monitor: Debug and print statistics
